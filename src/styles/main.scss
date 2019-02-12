@@ -1,0 +1,25 @@
+// Color scheme
+$color_orange: rgb(242, 103, 31);
+$color_red: rgb(201, 27, 38);
+$color_pink: rgb(156, 15, 95);
+$color_purple: rgb(96, 4, 122);
+$color_blue: rgb(22, 10, 71);
+
+// Override bootstrap colors
+$theme-colors: (
+  "primary": $color_orange,
+  "secondary": $color_blue
+);
+
+@import "src/../node_modules/bootstrap/scss/bootstrap";
+
+html {
+  padding-top: 56px;
+  position: relative;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lighten($color_purple, 70%);
+}
