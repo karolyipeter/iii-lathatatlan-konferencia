@@ -28,7 +28,7 @@ const Footer = () => (
             <div class="col">
               <h2 class="mb-4">Elérhetőségek</h2>
               <p>
-                A konferencia szervezője a
+                A konferencia szervezője a{' '}
                 <a href="https://lathatatlanegyetem.hu/">
                   Láthatatlan Egyetem Egyesület
                 </a>

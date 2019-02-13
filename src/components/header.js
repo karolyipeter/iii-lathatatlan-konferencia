@@ -5,13 +5,13 @@ const Header = ({ siteTitle }) => (
   <header>
     <nav
       id="navbar"
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary"
+      className="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary"
     >
-      <a class="navbar-brand" href="/">
+      <a className="navbar-brand" href="/">
         {siteTitle}
       </a>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -19,17 +19,55 @@ const Header = ({ siteTitle }) => (
         aria-expanded="false"
         aria-label="Navigáció megnyitása"
       >
-        <span class="navbar-toggler-icon" />
+        <span className="navbar-toggler-icon" />
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav ml-auto">
           <li
-            class="nav-item"
+            className="nav-item"
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
           >
-            <a class="nav-link">Test</a>
+            <a className="nav-link" href="#esemenyrol">
+              Az eseményről
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a className="nav-link" href="#eloadok">
+              Előadók
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a className="nav-link" href="#helyszin">
+              Helyszín
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a className="nav-link" href="#vasarlas">
+              Jegyvásárlás
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a className="nav-link" href="#elerhetoseg">
+              Elérhetőség
+            </a>
           </li>
         </ul>
       </div>
