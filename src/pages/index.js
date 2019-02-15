@@ -27,10 +27,10 @@ const getSpeakerData = speakers => {
 const IndexPage = ({ data }) => (
   <>
     <SEO
-      title="III. Láthatatlan Konferencia"
+      title="Főoldal"
       keywords={[`konferencia`, `rendezvény`, `Láthatatlan Egyetem`]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header siteTitle="III. Láthatatlan Konferencia" />
     <Hero />
     <div className="container">
       <section id="esemenyrol" className="row anchor content-block">
