@@ -56,7 +56,10 @@ const Header = ({ siteTitle }) => (
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
           >
-            <a className="nav-link" href="#vasarlas">
+            <a
+              className="nav-link"
+              href="http://salesautopilot.s3.amazonaws.com/newsletter/letter/nl90422/ns169359/subscribe.html"
+            >
               Jegyvásárlás
             </a>
           </li>

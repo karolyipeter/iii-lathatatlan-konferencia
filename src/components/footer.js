@@ -43,6 +43,9 @@ const Footer = () => (
                   facebook.com/lathatatlanegyetem
                 </a>
               </p>
+              <p>
+                <a href="/terms">ÁSZF</a>
+              </p>
               <a href="https://www.barion.com/hu/tajekoztato-biztonsagos-online-fizetesrol">
                 <Img fixed={data.file.childImageSharp.fixed} />
               </a>

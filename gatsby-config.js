@@ -18,8 +18,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages_markdown`,
-        path: `${__dirname}/src/pages_markdown`,
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `speakers`,
+        path: `${__dirname}/src/speakers`,
       },
     },
     `gatsby-transformer-sharp`,
