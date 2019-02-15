@@ -92,7 +92,10 @@ export const query = graphql`
         title
       }
     }
-    speakers: allFile(filter: { sourceInstanceName: { eq: "speakers" } }) {
+    speakers: allFile(
+      filter: { sourceInstanceName: { eq: "speakers" } }
+      sort: { fields: [name], order: ASC }
+    ) {
       edges {
         node {
           id

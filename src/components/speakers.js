@@ -2,19 +2,17 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 const Speaker = ({ name, title, image }) => (
-  <div className="row justify-content-center mb-3">
-    <div className="col-sm-4 col-md-3">
-      <Img fluid={image} className="img-fluid rounded-circle" alt={name} />
-    </div>
-    <div className="col-sm-8 col-md-7">
-      <h3>{name}</h3>
-      <p className="lead">{title}</p>
+  <div className="card">
+    <Img fluid={image} className="card-img-top" alt={name} />
+    <div className="card-body">
+      <h5 className="card-title">{name}</h5>
+      <p className="card-text">{title}</p>
     </div>
   </div>
 )
 
 const Speakers = ({ speakerData }) => (
-  <>
+  <div className="card-columns">
     {speakerData.map(speaker => (
       <Speaker
         key={speaker.id}
@@ -23,7 +21,7 @@ const Speakers = ({ speakerData }) => (
         image={speaker.image}
       />
     ))}
-  </>
+  </div>
 )
 
 export default Speakers
