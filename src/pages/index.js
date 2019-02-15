@@ -16,6 +16,7 @@ const getSpeakerData = speakers => {
       id: speaker.node.id,
       name: speaker.node.childMarkdownRemark.frontmatter.name,
       title: speaker.node.childMarkdownRemark.frontmatter.title,
+      description: speaker.node.childMarkdownRemark.excerpt,
       image:
         speaker.node.childMarkdownRemark.frontmatter.image.childImageSharp
           .fluid,
@@ -100,6 +101,7 @@ export const query = graphql`
         node {
           id
           childMarkdownRemark {
+            excerpt
             frontmatter {
               path
               name
