@@ -4,11 +4,11 @@ import { graphql } from 'gatsby'
 const Template = ({ data }) => {
   const { html } = data.markdownRemark
   return (
-    <div className="container">
+    <main className="container">
       <div className="row">
         <div className="col" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </div>
+    </main>
   )
 }
 

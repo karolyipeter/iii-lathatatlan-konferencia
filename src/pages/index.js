@@ -11,16 +11,14 @@ import Sponsors from 'src/components/sponsors'
 import Footer from 'src/components/footer'
 
 const getSpeakerData = speakers => {
-  return speakers.edges.map(speaker => {
+  return speakers.edges.map(({ node }) => {
     return {
-      id: speaker.node.id,
-      name: speaker.node.childMarkdownRemark.frontmatter.name,
-      title: speaker.node.childMarkdownRemark.frontmatter.title,
-      description: speaker.node.childMarkdownRemark.excerpt,
-      image:
-        speaker.node.childMarkdownRemark.frontmatter.image.childImageSharp
-          .fluid,
-      path: speaker.node.childMarkdownRemark.frontmatter.path,
+      id: node.id,
+      name: node.childMarkdownRemark.frontmatter.name,
+      title: node.childMarkdownRemark.frontmatter.title,
+      description: node.childMarkdownRemark.excerpt,
+      image: node.childMarkdownRemark.frontmatter.image.childImageSharp.fluid,
+      path: node.childMarkdownRemark.frontmatter.path,
     }
   })
 }
@@ -31,9 +29,13 @@ const IndexPage = ({ data }) => (
       title="Főoldal"
       keywords={[`konferencia`, `rendezvény`, `Láthatatlan Egyetem`]}
     />
-    <Header siteTitle="III. Láthatatlan Konferencia" />
-    <Hero />
-    <div className="container">
+    <Header siteTitle="III. Láthatatlan Konferencia" showNav={true} />
+    <Hero
+      title="III. Láthatatlan Konferencia"
+      subtitle="2019. 02. 23."
+      subsubtitle="Budapest"
+    />
+    <main className="container">
       <section id="esemenyrol" className="row anchor content-block">
         <div className="col">
           <h2>Az eseményről</h2>
@@ -81,7 +83,7 @@ const IndexPage = ({ data }) => (
           <Sponsors />
         </div>
       </section>
-    </div>
+    </main>
     <Footer />
   </>
 )

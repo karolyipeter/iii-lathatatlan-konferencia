@@ -4,14 +4,18 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const fullPageTemplate = path.resolve('src/templates/fullPageMD.js')
+  const speakerTemplate = path.resolve('src/templates/speaker.js')
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allFile(filter: { sourceInstanceName: { in: ["pages", "speakers"] } }) {
         edges {
           node {
-            frontmatter {
-              path
+            sourceInstanceName
+            childMarkdownRemark {
+              frontmatter {
+                path
+              }
             }
           }
         }
@@ -22,12 +26,17 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(results.errors)
     }
 
-    results.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: fullPageTemplate,
-        context: {},
-      })
+    results.data.allFile.edges.forEach(({ node }) => {
+      if (node.childMarkdownRemark) {
+        createPage({
+          path: node.childMarkdownRemark.frontmatter.path,
+          component:
+            node.sourceInstanceName === 'speakers'
+              ? speakerTemplate
+              : fullPageTemplate,
+          context: {},
+        })
+      }
     })
   })
 }
