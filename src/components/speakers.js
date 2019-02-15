@@ -17,6 +17,7 @@ const Speakers = ({ speakerData }) => (
   <>
     {speakerData.map(speaker => (
       <Speaker
+        key={speaker.id}
         name={speaker.name}
         title={speaker.title}
         image={speaker.image}

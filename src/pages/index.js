@@ -10,17 +10,18 @@ import Location from 'src/components/location'
 import Sponsors from 'src/components/sponsors'
 import Footer from 'src/components/footer'
 
-const getSpeakerData = allMarkdownRemark => {
-  return allMarkdownRemark.edges
-    .filter(edge => edge.node.frontmatter.type === 'speaker')
-    .map(speaker => {
-      return {
-        name: speaker.node.frontmatter.name,
-        title: speaker.node.frontmatter.title,
-        image: speaker.node.frontmatter.image.childImageSharp.fluid,
-        path: speaker.node.frontmatter.path,
-      }
-    })
+const getSpeakerData = speakers => {
+  return speakers.edges.map(speaker => {
+    return {
+      id: speaker.node.id,
+      name: speaker.node.childMarkdownRemark.frontmatter.name,
+      title: speaker.node.childMarkdownRemark.frontmatter.title,
+      image:
+        speaker.node.childMarkdownRemark.frontmatter.image.childImageSharp
+          .fluid,
+      path: speaker.node.childMarkdownRemark.frontmatter.path,
+    }
+  })
 }
 
 const IndexPage = ({ data }) => (
@@ -50,7 +51,7 @@ const IndexPage = ({ data }) => (
       <section id="eloadok" className="row anchor content-block">
         <div className="col">
           <h2>Előadók</h2>
-          <Speakers speakerData={getSpeakerData(data.allMarkdownRemark)} />
+          <Speakers speakerData={getSpeakerData(data.speakers)} />
         </div>
       </section>
       <section id="helyszin" className="row anchor content-block">
@@ -91,18 +92,20 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark {
+    speakers: allFile(filter: { sourceInstanceName: { eq: "speakers" } }) {
       edges {
         node {
-          frontmatter {
-            path
-            type
-            name
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid
+          id
+          childMarkdownRemark {
+            frontmatter {
+              path
+              name
+              title
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }

@@ -34,6 +34,7 @@ const About = () => (
         ) {
           edges {
             node {
+              id
               childImageSharp {
                 fixed(height: 80) {
                   ...GatsbyImageSharpFixed
@@ -52,7 +53,7 @@ const About = () => (
         <Img fixed={data.co_organizer.childImageSharp.fixed} />
         <h4>További támogatók</h4>
         {data.others.edges.map(edge => (
-          <Img fixed={edge.node.childImageSharp.fixed} />
+          <Img fixed={edge.node.childImageSharp.fixed} key={edge.node.id} />
         ))}
       </div>
     )}

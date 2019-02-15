@@ -1,6 +1,5 @@
 ---
 path: '/terms'
-type: 'page'
 ---
 
 # Általános szerződési feltételek, adatvédelem

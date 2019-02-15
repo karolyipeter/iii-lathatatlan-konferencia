@@ -2,12 +2,12 @@ import React from 'react'
 
 const About = () => (
     <section>
-        <p class="lead text-center">
+        <p className="lead text-center">
             10+ előadó, 200+ percnyi tudásanyag, 1 teremben <br /> Egy egész
             délutános előadássorozat életvezetési témákban! <br /> Ismert arcok,
             friss felfedezettek, régi ismerősök és új kapcsolatok!
         </p>
-        <p class="text-justify">
+        <p className="text-justify">
             A Láthatatlan Konferencia az életvezetési témák, a témákban járatos
             szakemberek és az érdeklődők fóruma, mely gondolatébresztő
             előadásokkal, lelkes előadókkal és a kapcsolódási lehetőség

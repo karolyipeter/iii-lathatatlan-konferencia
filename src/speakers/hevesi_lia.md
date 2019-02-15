@@ -1,9 +1,6 @@
 ---
 path: '/eloadok/hevesi_lia'
-type: 'speaker'
 name: 'Hevesi Lia'
-title: 'Beyond Borders'
-image: '../images/speakers/hevesi_lia.png'
+title: 'Beyond Borders - Határainkon innen, határainkon túl'
+image: '../images/speakers/hevesi_lia.jpg'
 ---
-
-Teszt

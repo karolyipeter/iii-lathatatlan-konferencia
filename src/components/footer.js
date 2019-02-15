@@ -18,15 +18,15 @@ const Footer = () => (
     render={data => (
       <footer
         id="elerhetoseg"
-        class="anchor bg-dark text-light contact"
+        className="anchor bg-dark text-light contact"
         style={{
           padding: '8rem 0',
         }}
       >
-        <div class="container">
-          <div class="row text-center">
-            <div class="col">
-              <h2 class="mb-4">Elérhetőségek</h2>
+        <div className="container">
+          <div className="row text-center">
+            <div className="col">
+              <h2 className="mb-4">Elérhetőségek</h2>
               <p>
                 A konferencia szervezője a{' '}
                 <a href="https://lathatatlanegyetem.hu/">

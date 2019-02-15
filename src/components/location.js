@@ -7,11 +7,11 @@ const Location = () => (
                 title="google_maps"
                 width="100%"
                 height="500"
-                frameborder="0"
+                frameBorder="0"
                 style={{ border: 0 }}
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBxL7a0SMqLaX40G7OKNNPNBu5ziWRAv_E
         &q=Eötvös+Loránd+Tudományegyetem+Pedagógiai+és+Pszichológiai+Kar"
-                allowfullscreen
+                allowFullScreen
             />
         </div>
         <div className="col-lg-2 location__text">
