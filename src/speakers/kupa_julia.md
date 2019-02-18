@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/kupa_julia'
+path: '/eloadok/kupa-julia'
 name: 'Kupa Júlia'
 title: 'Határ (slam poetry)'
 image: '../images/speakers/kupa_julia.jpg'

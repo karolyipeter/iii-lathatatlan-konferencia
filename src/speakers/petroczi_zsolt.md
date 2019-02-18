@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/petroczi_zsolt'
+path: '/eloadok/petroczi-zsolt'
 name: 'Petróczi Zsolt'
 title: 'Benned van, aki lehetsz'
 image: '../images/speakers/petroczi_zsolt.jpg'

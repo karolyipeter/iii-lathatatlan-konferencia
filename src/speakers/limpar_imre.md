@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/limpar_imre'
+path: '/eloadok/limpar-imre'
 name: 'Limpár Imre'
 title: 'A Nagy Falon túl'
 image: '../images/speakers/limpar_imre.jpg'

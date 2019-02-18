@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/thanh_giang_nguyen_thi'
+path: '/eloadok/thanh-giang-nguyen-thi'
 name: 'Nguyen Thi Thanh Giang'
 title: 'Mit adott a mélypontom?'
 image: '../images/speakers/thanh_giang_nguyen_thi.jpg'

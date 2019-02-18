@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/horvath_bea'
+path: '/eloadok/horvath-bea'
 name: 'Horváth Bea'
 title: 'Hitembe zárva'
 image: '../images/speakers/horvath_bea.jpg'

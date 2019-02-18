@@ -1,5 +1,5 @@
 ---
-path: '/eloadok/hevesi_lia'
+path: '/eloadok/hevesi-lia'
 name: 'Hevesi Lia'
 title: 'Beyond Borders - Határainkon innen, határainkon túl'
 image: '../images/speakers/hevesi_lia.jpg'
