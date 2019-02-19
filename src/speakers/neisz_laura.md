@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/neisz-laura'
 name: 'Neisz Laura'
+time: '14:10 - 14:25'
 title: 'Mi a közös a terepfutásban és a TEDx készülésben... és az Életben?'
 image: '../images/speakers/neisz_laura.jpg'
 ---

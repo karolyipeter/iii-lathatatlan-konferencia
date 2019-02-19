@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/kupa-julia'
 name: 'Kupa Júlia'
+time: '16:10 - 16:20'
 title: 'Határ (slam poetry)'
 image: '../images/speakers/kupa_julia.jpg'
 ---

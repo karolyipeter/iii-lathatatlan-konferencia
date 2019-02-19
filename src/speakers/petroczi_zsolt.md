@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/petroczi-zsolt'
 name: 'Petróczi Zsolt'
+time: '14:25 - 14:35'
 title: 'Benned van, aki lehetsz'
 image: '../images/speakers/petroczi_zsolt.jpg'
 ---

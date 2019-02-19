@@ -5,6 +5,7 @@ import SEO from 'src/components/seo'
 import Header from 'src/components/header'
 import Hero from 'src/components/hero'
 import About from 'src/components/about'
+import Schedule from 'src/components/schedule'
 import Speakers from 'src/components/speakers'
 import Location from 'src/components/location'
 import Sponsors from 'src/components/sponsors'
@@ -16,6 +17,7 @@ const getSpeakerData = speakers => {
       id: node.id,
       name: node.childMarkdownRemark.frontmatter.name,
       title: node.childMarkdownRemark.frontmatter.title,
+      time: node.childMarkdownRemark.frontmatter.time,
       description: node.childMarkdownRemark.excerpt,
       image: node.childMarkdownRemark.frontmatter.image.childImageSharp.fluid,
       path: node.childMarkdownRemark.frontmatter.path,
@@ -51,6 +53,12 @@ const IndexPage = ({ data }) => (
           <span className="h1">Megveszem a jegyemet!</span>
         </a>
       </p>
+      <section id="program" className="row anchor content-block">
+        <div className="col">
+          <h2>Program</h2>
+          <Schedule speakerData={getSpeakerData(data.speakers)} />
+        </div>
+      </section>
       <section id="eloadok" className="row anchor content-block">
         <div className="col">
           <h2>Előadók</h2>
@@ -108,6 +116,7 @@ export const query = graphql`
               path
               name
               title
+              time
               image {
                 childImageSharp {
                   fluid(maxWidth: 400) {

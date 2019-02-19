@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/hevesi-lia'
 name: 'Hevesi Lia'
+time: '15:30 - 15:50'
 title: 'Beyond Borders - Határainkon innen, határainkon túl'
 image: '../images/speakers/hevesi_lia.jpg'
 ---

@@ -32,6 +32,11 @@ const Header = ({ siteTitle, showNav }) => (
                 </a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="#program">
+                  Program
+                </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="#eloadok">
                   Előadók
                 </a>

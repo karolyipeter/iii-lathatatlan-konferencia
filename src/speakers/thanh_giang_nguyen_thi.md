@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/thanh-giang-nguyen-thi'
 name: 'Nguyen Thi Thanh Giang'
+time: '14:35 - 15:05'
 title: 'Mit adott a mélypontom?'
 image: '../images/speakers/thanh_giang_nguyen_thi.jpg'
 ---

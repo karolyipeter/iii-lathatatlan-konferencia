@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/limpar-imre'
 name: 'Limpár Imre'
+time: '14:45 - 15:05'
 title: 'A Nagy Falon túl'
 image: '../images/speakers/limpar_imre.jpg'
 ---

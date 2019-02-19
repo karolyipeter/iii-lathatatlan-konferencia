@@ -2,6 +2,7 @@
 path: '/eloadok/hevesi-krisztina'
 name: 'Dr. Hevesi Krisztina'
 title: 'A Tinder útvesztőjében'
+time: '15:50 - 16:10'
 image: '../images/speakers/hevesi_krisztina.jpg'
 ---
 

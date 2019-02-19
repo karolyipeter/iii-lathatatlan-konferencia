@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/marky-adam'
 name: 'Dr. Márky Ádám'
+time: '17:30 - 17:50'
 title: 'Tudatosság nélkül nincs egészség'
 image: '../images/speakers/marky_adam.jpg'
 ---

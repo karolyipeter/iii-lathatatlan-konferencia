@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/pusztai-adam'
 name: 'Pusztai Ádám'
+time: '17:00 - 17:15'
 title: 'Játéktér az egész világ, és játékos benne minden ember'
 image: '../images/speakers/pusztai_adam.jpg'
 ---

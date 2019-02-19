@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/horvath-bea'
 name: 'Horváth Bea'
+time: '17:15 - 17:30'
 title: 'Hitembe zárva'
 image: '../images/speakers/horvath_bea.jpg'
 ---

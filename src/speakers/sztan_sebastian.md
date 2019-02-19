@@ -1,6 +1,7 @@
 ---
 path: '/eloadok/sztan-sebastian'
 name: 'Sztán Sebastian'
+time: '16:20 - 16:35'
 title: 'Rögtönzés a készlet erejéig'
 image: '../images/speakers/sztan_sebastian.jpg'
 ---
